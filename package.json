@@ -57,5 +57,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-number-format": "^4.3.1"
+  }
 }
