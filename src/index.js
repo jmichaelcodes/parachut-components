@@ -41,7 +41,7 @@ NestedButton.defaultProps = {
 
 export function CircleButton({ className, style, text }) {
   return (
-    <button className={[styles.circleButtonButton, className].join(' ')} style={style} onClick={() => alert('clicked')}>
+    <button className={[styles.circleButtonButton, className].join(' ')}>
       <p className={styles.circleButtonText}>{text}</p>
       <img src={circleButtonCircle} style={{ height: 100, width: 100 }} />
     </button>
