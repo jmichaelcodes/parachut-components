@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("/src/static/GothamSSm-Black.otf") format("opentype"),
+    /* url("/static/fonts/UntitledSerifWeb-Regular.woff2") format("woff2"); */
+}
+@font-face {
+  font-family: "Untitled Serif";
+  src: url("/static/fonts/UntitledSerifWeb-RegularItalic.woff") format("woff"),
+    url("/static/fonts/UntitledSerifWeb-RegularItalic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Untitled Serif";
+  src: url("/static/fonts/UntitledSerifWeb-Bold.woff") format("woff"),
+    url("/static/fonts/UntitledSerifWeb-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Untitled Serif";
+  src: url("/static/fonts/UntitledSerifWeb-BoldItalic.woff") format("woff"),
+    url("/static/fonts/UntitledSerifWeb-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}

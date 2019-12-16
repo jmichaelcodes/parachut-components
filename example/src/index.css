@@ -3,3 +3,43 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.gridItem {
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.modal {
+  background-color: #8AB7C6;
+  height: 500px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 959px) {
+  .modal {
+    height: inherit;
+    width: 75%;
+  }
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0px 15px
+}
+
+@media only screen and (min-width: 960px) {
+  .navMenuIcon {
+    display: none
+  }
+}
+
+.sectionHeader {
+  padding-top: 25px
+}
+
+.sectionTitle {
+  margin-bottom: 10px !important
+}

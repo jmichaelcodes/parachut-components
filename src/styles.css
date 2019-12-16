@@ -1,9 +1,13 @@
+/* Circle Button */
+
 .circleButtonButton {
-  position: relative;
+  background: none;
   border: none;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   outline: none;
+  position: relative;
 }
 
 .circleButtonText {
@@ -20,6 +24,52 @@
   white-space: nowrap;
 }
 
+/* Container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 959px) {
+  .container {
+    width: inherit !important;
+  }
+}
+
+.containerOverlay {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+
+/* Navbar */
+.navBar {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1
+}
+
+.navbarContainer {
+  left: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 959px) {
+  .navbarContainer {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+}
+
+/* Oval Button */
+
 .ovalButtonContainer {
   background-color: #eeeae5;
   border-radius: 32px;
@@ -33,9 +83,15 @@
   width: 290px;
 }
 
-.ovalButtonContainerSmall {
+.ovalButtonContainerMedium {
   height: 48px;
   width: 270px;
+}
+
+.ovalButtonContainerSmall {
+  font-size: 12px;
+  height: 64px;
+  width: 204px;
 }
 
 .ovalButtonBorder {
@@ -48,59 +104,410 @@
   width: 276px;
 }
 
-.ovalButtonBorderSmall {
+.ovalButtonBorderMedium {
   height: 38px;
   left: 4px;
   top: 3px;
   width: 258px;
 }
 
-.ovalButtonOuter {
-  position: relative
+.ovalButtonBorderSmall {
+  height: 50px;
+  left: 5px;
+  top: 5px;
+  width: 190px;
 }
+
+.ovalButtonOuter {
+  cursor: pointer;
+  position: relative;
+  width: 290px;
+}
+
+.ovalButtonOuterMedium {
+  width: 270px;
+}
+
+.ovalButtonOuterSmall {
+  width: 204px;
+}
+
+/* Text Input */
 
 .error {
   border-bottom: 2px solid red !important;
 }
 
-.textInput {
+.input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #d1c5c2;
   color: #848484;
-  font-size: 10;
+  font-size: 10px;
   font-weight: bold;
   outline: none;
-  padding-bottom: 5;
+  padding-bottom: 5px;
   width: 100%;
 }
 
-.textInputContainer {
-  position: relative
+.inputContainer {
+  position: relative;
 }
 
-.textInputCheckMark {
-  color: #8AB7C6;
+.inputCheckMark {
+  color: #8ab7c6;
   position: absolute;
   right: -5px;
   top: 0px;
 }
 
-.textInputError {
-  border-bottom: 2px solid red !important
+.inputError {
+  border-bottom: 2px solid red !important;
 }
 
-.textInputErrorText {
-  color: red; 
-  font-size: 8px; 
-  margin: 5px 0px 0px 0px
+.inputErrorText {
+  color: red;
+  font-size: 8px;
+  margin: 5px 0px 0px 0px;
 }
 
-.textInputIcon {
+.inputIcon {
   color: red;
   font-weight: 700;
   margin: 0;
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+/* Modal */
+.modal {
+  left: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.modalClose {
+  cursor: pointer;
+  height: 16px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/* Hidden */
+.hiddenxsUp {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .hiddensmUp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .hiddenmdUp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hiddenlgUp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hiddenxlUp {
+    display: none;
+  }
+}
+
+/* Hidden */
+@media only screen and (max-width: 599px) {
+  .hiddenxsDown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .hiddensmDown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .hiddenmdDown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1919px) {
+  .hiddenlgDown {
+    display: none;
+  }
+}
+
+.hiddenxlDown {
+  display: none;
+}
+
+/* Grid */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.xs1 {
+  width: 8.33%;
+}
+
+.xs2 {
+  width: 16.66%;
+}
+
+.xs3 {
+  width: 24.99%;
+}
+
+.xs4 {
+  width: 33.32%;
+}
+
+.xs5 {
+  width: 41.65%;
+}
+
+.xs6 {
+  width: 49.98%;
+}
+
+.xs7 {
+  width: 58.31%;
+}
+
+.xs8 {
+  width: 66.64%;
+}
+
+.xs9 {
+  width: 74.97%;
+}
+
+.xs10 {
+  width: 83.3%;
+}
+
+.xs11 {
+  width: 91.63%;
+}
+
+.xs12 {
+  width: 99.96%;
+}
+
+@media only screen and (min-width: 600px) {
+  .sm1 {
+    width: 8.33%;
+  }
+
+  .sm2 {
+    width: 16.66%;
+  }
+
+  .sm3 {
+    width: 24.99%;
+  }
+
+  .sm4 {
+    width: 33.32%;
+  }
+
+  .sm5 {
+    width: 41.65%;
+  }
+
+  .sm6 {
+    width: 49.98%;
+  }
+
+  .sm7 {
+    width: 58.31%;
+  }
+
+  .sm8 {
+    width: 66.64%;
+  }
+
+  .sm9 {
+    width: 74.97%;
+  }
+
+  .sm10 {
+    width: 83.3%;
+  }
+
+  .sm11 {
+    width: 91.63%;
+  }
+
+  .sm12 {
+    width: 99.96%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .md1 {
+    width: 8.33%;
+  }
+
+  .md2 {
+    width: 16.66%;
+  }
+
+  .md3 {
+    width: 24.99%;
+  }
+
+  .md4 {
+    width: 33.32%;
+  }
+
+  .md5 {
+    width: 41.65%;
+  }
+
+  .md6 {
+    width: 49.98%;
+  }
+
+  .md7 {
+    width: 58.31%;
+  }
+
+  .md8 {
+    width: 66.64%;
+  }
+
+  .md9 {
+    width: 74.97%;
+  }
+
+  .md10 {
+    width: 83.3%;
+  }
+
+  .md11 {
+    width: 91.63%;
+  }
+
+  .md12 {
+    width: 99.96%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lg1 {
+    width: 8.33%;
+  }
+
+  .lg2 {
+    width: 16.66%;
+  }
+
+  .lg3 {
+    width: 24.99%;
+  }
+
+  .lg4 {
+    width: 33.32%;
+  }
+
+  .lg5 {
+    width: 41.65%;
+  }
+
+  .lg6 {
+    width: 49.98%;
+  }
+
+  .lg7 {
+    width: 58.31%;
+  }
+
+  .lg8 {
+    width: 66.64%;
+  }
+
+  .lg9 {
+    width: 74.97%;
+  }
+
+  .lg10 {
+    width: 83.3%;
+  }
+
+  .lg11 {
+    width: 91.63%;
+  }
+
+  .lg12 {
+    width: 99.96%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .xl1 {
+    width: 8.33%;
+  }
+
+  .xl2 {
+    width: 16.66%;
+  }
+
+  .xl3 {
+    width: 24.99%;
+  }
+
+  .xl4 {
+    width: 33.32%;
+  }
+
+  .xl5 {
+    width: 41.65%;
+  }
+
+  .xl6 {
+    width: 49.98%;
+  }
+
+  .xl7 {
+    width: 58.31%;
+  }
+
+  .xl8 {
+    width: 66.64%;
+  }
+
+  .xl9 {
+    width: 74.97%;
+  }
+
+  .xl10 {
+    width: 83.3%;
+  }
+
+  .xl11 {
+    width: 91.63%;
+  }
+
+  .xl12 {
+    width: 99.96%;
+  }
 }
